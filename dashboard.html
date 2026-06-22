@@ -1,29 +1,121 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<title>Dashboard</title>
-<link rel="stylesheet" href="style.css">
+<title>Student Dashboard</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+.header{
+background:#4f46e5;
+color:white;
+padding:20px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:30px;
+flex-wrap:wrap;
+}
+
+.card{
+width:250px;
+padding:25px;
+border-radius:15px;
+color:white;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.blue{
+background:#3b82f6;
+}
+
+.green{
+background:#10b981;
+}
+
+.orange{
+background:#f59e0b;
+}
+
+.red{
+background:#ef4444;
+}
+
+.card h2{
+font-size:35px;
+margin-bottom:10px;
+}
+
+.profile{
+width:80%;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.profile h2{
+margin-bottom:15px;
+color:#4f46e5;
+}
+
+</style>
 </head>
+
 <body>
 
-<h1>Student Management Dashboard</h1>
+<div class="header">
+🎓 Student Management Dashboard
+</div>
 
-<div class="menu">
+<div class="cards">
 
-<a href="students.html">
-<button>Students</button>
-</a>
+<div class="card blue">
+<h2>95%</h2>
+<p>Attendance</p>
+</div>
 
-<button>Courses</button>
-<button>Attendance</button>
-<button>Results</button>
-<button>Profile</button>
+<div class="card green">
+<h2>8</h2>
+<p>Courses</p>
+</div>
 
-<a href="login.html">
-<button>Logout</button>
-</a>
+<div class="card orange">
+<h2>12</h2>
+<p>Assignments</p>
+</div>
 
+<div class="card red">
+<h2>89%</h2>
+<p>Overall Score</p>
+</div>
+
+</div>
+
+<div class="profile">
+<h2>Student Profile</h2>
+<p><b>Name:</b> Vithya Shree</p>
+<p><b>Department:</b> B.Sc Computer Science</p>
+<p><b>Year:</b> III Year</p>
+<p><b>Email:</b> student@email.com</p>
 </div>
 
 </body>
